@@ -18,6 +18,8 @@ Usage Example:
 ===============================================================================
 */
 
+
+
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
     DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME; 
@@ -251,3 +253,6 @@ BEGIN
 		PRINT '=========================================='
 	END CATCH
 END
+
+
+--exec silver.load_silver
